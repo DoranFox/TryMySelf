@@ -54,7 +54,8 @@
 	vertical-align: middle;
 	margin-left: 7px;
 }
-input{
+input[type="text"],
+input[type="password"]{
   border-style: solid;
   border-width: 1px;
   border-color: rgb(155, 161, 163);
@@ -194,7 +195,7 @@ ul.horizontal-nav li a:hover{
 	float: left;
 }
 .wrapper-nav{
-	display: flex;
+	display: inline-flex;
 }
 .names {
 	width: 70px;
@@ -235,8 +236,81 @@ ul.horizontal-nav li a:hover{
 /*MID PART*/
 .mid-options{
 	width: 192px;
+	position: relative;
+}
+.title-name-mid h2{
+	text-transform: uppercase;
+	color:#114165;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: 900;
+}
+.mid-section-form span{
+	font-family: Lucida;
+	font-size: 10px;
+	font-weight: 600;
+}
+.mid-section-form span.slash{
+	font-size: 16px;
+	color: black;
+}
+.mid-section-form select{
+	width: 50px;
+}
+.mid-section-form .small-select-mid {
+	width: 43px;
+}
+.mid-section-form form div{
+	margin-bottom:4px;
+}
+.floating-right{
+	margin-left:25px;
+}
+.checkboxes{
+	margin-bottom:0;
+}
+.checkboxes span{
+	font-size: 10px;
+	font-weight: 900;
+	font-family: Lucida;
+}
+.flex-checkboxes{
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.flex-inputs{
+	display: inline-flex;
+	flex-direction: column;
+	margin-left: 4px;
+}
+.flex-inputs span{
+	vertical-align: middle;
+	line-height: 0;	
+}
+.checkboxes .flex-checkboxes .flex-inputs div{
+	margin-bottom: 0;
+	height: 13px;
+}
+.mid-a{
+	color: #154467;
+    font-style: italic;
+    font-size: 14px;
+    font-family: Arial;
+    float: right;
+
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
 }
 /*RIGHT PART*/
 .right-options{
 	width: 268px;
+}
+.title-name-right h2{
+	text-transform: uppercase;
+	color:#114165;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: 900;
 }
